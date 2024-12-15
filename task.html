@@ -1,0 +1,17 @@
+<script>
+    const rows = 10;
+    const cols = 10;
+    const baseNumber = 21; // Початок таблиці
+    const step = 5;        // Кратність
+    let table = "<table border='1'>";
+    for (let i = 0; i <= rows; i++) {
+        table += "<tr>";
+        for (let j = 0; j <= cols; j++) {
+            const value = (baseNumber + i) * (step * j + 25);
+            table += `<td>${value}</td>`;
+        }
+        table += "</tr>";
+    }
+    table += "</table>";
+    document.body.innerHTML = table;
+</script>
