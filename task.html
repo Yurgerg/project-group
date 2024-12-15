@@ -1,17 +1,34 @@
-<script>
-    const rows = 10;
-    const cols = 10;
-    const baseNumber = 21; // Початок таблиці
-    const step = 5;        // Кратність
-    let table = "<table border='1'>";
-    for (let i = 0; i <= rows; i++) {
-        table += "<tr>";
-        for (let j = 0; j <= cols; j++) {
-            const value = (baseNumber + i) * (step * j + 25);
-            table += `<td>${value}</td>`;
-        }
-        table += "</tr>";
-    }
-    table += "</table>";
-    document.body.innerHTML = table;
-</script>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="tasks.html">Завдання</a></li>
+                <li><a href="team.html">Команда</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Наші Завдання</h1>
+        <p>Ми працюємо над різними цікавими проектами, ось деякі з них:</p>
+        <ul>
+            <li>Розробка нового веб-сайту</li>
+            <li>Створення мобільного додатку</li>
+            <li>Оптимізація процесів для бізнесу</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мій сайт</p>
+    </footer>
+</body>
+</html>
